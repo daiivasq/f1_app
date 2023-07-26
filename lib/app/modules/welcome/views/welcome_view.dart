@@ -1,3 +1,4 @@
+import 'package:f1_app/app/routes/app_pages.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -33,7 +34,7 @@ class WelcomeView extends GetView<WelcomeController> {
         floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
         floatingActionButton: LoadingAnimatedButton(
           color: Colors.red,
-          onTap: () => print("hi"),
+          onTap: () => Get.toNamed(Routes.menu),
           child: const Text(
             "Let's start",
             style: TextStyle(
